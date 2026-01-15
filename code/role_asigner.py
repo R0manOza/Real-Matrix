@@ -13,13 +13,36 @@ def call_llm(model, messages, temperature=0.7):
     """Make API call with retry logic."""
     for attempt in range(MAX_RETRIES):
         try:
-            response = client.chat.completions.create(
-                model=model,
-                messages=messages,
-                temperature=temperature,
-                response_format={"type": "json_object"}
-            )
-            return json.loads(response.choices[0].message.content)
+            # Try with JSON format first (for models that support it)
+            try:
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=messages,
+                    temperature=temperature,
+                    response_format={"type": "json_object"}
+                )
+                return json.loads(response.choices[0].message.content)
+            except Exception as json_error:
+                # Fallback: request JSON in the prompt and parse from text
+                if "response_format" in str(json_error).lower():
+                    messages_with_json = messages.copy()
+                    if messages_with_json[-1]["role"] == "user":
+                        messages_with_json[-1]["content"] += "\n\nIMPORTANT: Respond ONLY with valid JSON, no other text."
+                    
+                    response = client.chat.completions.create(
+                        model=model,
+                        messages=messages_with_json,
+                        temperature=temperature
+                    )
+                    content = response.choices[0].message.content.strip()
+                    # Try to extract JSON if wrapped in markdown code blocks
+                    if "```json" in content:
+                        content = content.split("```json")[1].split("```")[0].strip()
+                    elif "```" in content:
+                        content = content.split("```")[1].split("```")[0].strip()
+                    return json.loads(content)
+                else:
+                    raise json_error
         except Exception as e:
             if attempt < MAX_RETRIES - 1:
                 time.sleep(RETRY_DELAY * (attempt + 1))
