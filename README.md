@@ -66,20 +66,125 @@ Each solution includes:
 - Confidence score
 - Solution approach
 
-### Running the Full Pipeline
+#### Stage 2: Peer Review
 
-Run the main script (when implemented):
+Have each solver review the other two solutions:
 
 ```bash
-python code/main.py
+python code/reviewer.py
 ```
+
+**Prerequisites:** Stage 1 must be completed first.
 
 This will:
 
+- Have each of the 3 solvers review the other two solutions
+- Generate structured reviews with strengths, weaknesses, errors, and suggestions
+- Save all 6 peer reviews to `data/raw_outputs/{problem_id}_stage2_reviews.json`
+
+Each review includes:
+
+- `strengths`: List of what the solution does well
+- `weaknesses`: Areas that need improvement
+- `errors`: Any errors found in the reasoning or answer
+- `suggestions`: Constructive suggestions for improvement
+- `overall_assessment`: Summary of the review
+- `answer_correctness`: Assessment of whether the answer is correct/incorrect/uncertain
+
+#### Stage 3: Solution Refinement
+
+Have solvers refine their solutions based on peer feedback:
+
+```bash
+python code/refiner.py
+```
+
+**Prerequisites:** Stages 1 and 2 must be completed first.
+
+This will:
+
+- Give each solver their 2 peer reviews
+- Have them decide which critiques to accept or reject
+- Generate refined solutions that address valid concerns
+- Save all refined solutions to `data/raw_outputs/{problem_id}_stage3_refined.json`
+
+Each refined solution includes:
+
+- `critiques_accepted`: Which peer feedback was incorporated
+- `critiques_rejected`: Which feedback was rejected (with explanations)
+- `refinement_reasoning`: How the solution was refined
+- `reasoning_steps`: Updated step-by-step reasoning
+- `final_answer`: Refined final answer
+- `changed_from_original`: Whether the solution changed
+- `improvement_explanation`: How this version is better
+
+#### Stage 4: Final Judgment
+
+Have the judge evaluate all solutions and select the winner:
+
+```bash
+python code/judge.py
+```
+
+**Prerequisites:** Stages 0, 1, 2, and 3 must be completed first.
+
+This will:
+
+- Give the judge all original solutions, peer reviews, and refined solutions
+- Have the judge evaluate and compare all solutions
+- Select the winning solution and final answer
+- Save judgment to `data/raw_outputs/{problem_id}_stage4_judgment.json`
+- Save final result to `data/results/{problem_id}_final_result.json`
+
+The judgment includes:
+
+- `winner`: Which solver's solution won (solver_1, solver_2, or solver_3)
+- `winning_answer`: The final answer selected
+- `evaluation`: Detailed scores for each solver's original and refined solutions
+- `selection_reasoning`: Why this solution was selected
+- `consensus_analysis`: Analysis of agreement/disagreement among solvers
+- `confidence`: Judge's confidence in the selection
+
+### Running the Full Pipeline
+
+Run the complete end-to-end pipeline using the orchestrator:
+
+```bash
+# Run first problem as a test
+python code/main.py
+
+# Run a specific problem by ID
+python code/main.py --problem-id math_001
+
+# Run all problems in the dataset
+python code/main.py --all
+
+# Run all problems starting from a specific index (for resuming)
+python code/main.py --all --start-from 5
+
+# Run a limited number of problems
+python code/main.py --all --max-problems 10
+
+# Skip certain stages (useful for testing or resuming)
+python code/main.py --skip-stages "0,1"  # Skip stages 0 and 1
+```
+
+The orchestrator will:
+
 - Load problems from `data/problems.json`
-- Run the full debate workflow for each problem
-- Generate evaluation metrics
-- Create plots in `data/results/`
+- Run all stages in sequence (0 → 1 → 2 → 3 → 4) for each problem
+- Save all intermediate outputs automatically
+- Log progress to `data/raw_outputs/orchestrator.log`
+- Save progress after each problem to `data/results/progress.json`
+- Generate final summary in `data/results/summary.json`
+- Handle errors gracefully and continue with remaining problems
+
+**Features:**
+
+- Automatic stage dependency handling (loads previous stages if skipped)
+- Comprehensive logging for debugging
+- Progress tracking and resume capability
+- Error recovery (continues with next problem if one fails)
 
 ## Project Structure
 
@@ -115,14 +220,29 @@ Real-Matrix/
 
 ## Viewing Results
 
-After running Stage 1, you can view the generated solutions:
+After running each stage, you can view the outputs:
 
 ```bash
-# View the solutions file (example for first problem)
+# Stage 0: Role assignments
+cat data/raw_outputs/math_001_stage0_roles.json
+
+# Stage 1: Solutions
 cat data/raw_outputs/math_001_stage1_solutions.json
+
+# Stage 2: Peer reviews
+cat data/raw_outputs/math_001_stage2_reviews.json
+
+# Stage 3: Refined solutions
+cat data/raw_outputs/math_001_stage3_refined.json
+
+# Stage 4: Final judgment
+cat data/raw_outputs/math_001_stage4_judgment.json
+cat data/results/math_001_final_result.json
 ```
 
-Or open the JSON file in any text editor. Each solution contains:
+Or open the JSON files in any text editor. Each stage's output contains:
+
+**Stage 1 (Solutions):**
 
 - `reasoning_steps`: Array of step-by-step reasoning
 - `final_answer`: The solver's final answer
@@ -130,9 +250,48 @@ Or open the JSON file in any text editor. Each solution contains:
 - `approach`: Description of the solution method
 - `model_name`: Which model generated the solution
 
+**Stage 2 (Reviews):**
+
+- `strengths`, `weaknesses`, `errors`, `suggestions`: Structured feedback
+- `overall_assessment`: Summary evaluation
+- `answer_correctness`: Assessment of correctness
+
+**Stage 3 (Refined Solutions):**
+
+- `critiques_accepted/rejected`: What feedback was incorporated
+- `refinement_reasoning`: How the solution was improved
+- `changed_from_original`: Whether changes were made
+- Updated `reasoning_steps` and `final_answer`
+
+**Stage 4 (Judgment):**
+
+- `winner`: Winning solver ID
+- `winning_answer`: Final selected answer
+- `evaluation`: Scores for all solutions
+- `selection_reasoning`: Why this solution won
+
+## Stage Dependencies
+
+The stages must be run in order:
+
+1. **Stage 0** → Role Assignment (can run independently)
+2. **Stage 1** → Solutions (requires Stage 0, or runs it automatically)
+3. **Stage 2** → Reviews (requires Stage 1)
+4. **Stage 3** → Refinement (requires Stages 1 & 2)
+5. **Stage 4** → Judgment (requires Stages 0, 1, 2, & 3)
+
+Each stage checks for required previous stages and will show an error if dependencies are missing.
+
 ## Notes
 
 - All intermediate outputs are saved to `data/raw_outputs/` for debugging
-- Results and plots are saved to `data/results/`
-- Make sure you have API credits available - this makes many API calls per problem
-- The solver module automatically handles models that don't support JSON response format
+- Final results are saved to `data/results/`
+- Make sure you have API credits available - this makes many API calls per problem:
+  - Stage 0: 4 API calls (role assessments)
+  - Stage 1: 3 API calls (solutions)
+  - Stage 2: 6 API calls (peer reviews)
+  - Stage 3: 3 API calls (refinements)
+  - Stage 4: 1 API call (judgment)
+  - **Total: ~17 API calls per problem**
+- All modules automatically handle models that don't support JSON response format
+- You can run stages separately to inspect intermediate results before proceeding
