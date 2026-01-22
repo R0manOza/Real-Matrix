@@ -282,6 +282,59 @@ The stages must be run in order:
 
 Each stage checks for required previous stages and will show an error if dependencies are missing.
 
+## Phase 3: Evaluation and Analysis
+
+After running the full pipeline on problems, you can evaluate system performance:
+
+### Running Evaluation
+
+```bash
+# Run complete evaluation (includes baselines and plots)
+python code/run_evaluation.py
+
+# Skip single-LLM baseline to save API calls
+python code/run_evaluation.py --skip-baselines
+
+# Only run evaluation, skip plots
+python code/run_evaluation.py --evaluation-only
+```
+
+Or run components separately:
+
+```bash
+# Run evaluation only
+python code/evaluator.py
+
+# Skip single-LLM baseline
+python code/evaluator.py --skip-baselines
+
+# Generate plots from existing evaluation
+python code/plotter.py
+```
+
+### Evaluation Metrics
+
+The evaluation calculates:
+
+**System-Level Performance:**
+- **Overall Accuracy**: % of problems solved correctly by final answer
+- **Improvement Rate**: % of problems where refinement improved initial answers
+- **Consensus Rate**: % of problems where all 3 Solvers reached same answer
+- **Judge Accuracy**: When Solvers disagree, does Judge pick the correct one?
+
+**Baseline Comparisons:**
+- **Single-LLM Baseline**: Accuracy of "just ask GPT-4 once"
+- **Majority Vote Baseline**: 3 independent solutions, pick majority answer
+- **Your System**: Full debate with refinement
+
+**Outputs:**
+- `data/results/evaluation_results.json` - Complete evaluation data
+- `data/results/system_vs_baselines.png` - Comparison chart
+- `data/results/accuracy_by_category.png` - Performance by problem type
+- `data/results/consensus_analysis.png` - Consensus breakdown
+- `data/results/refinement_impact.png` - Refinement effectiveness
+- `data/results/judge_performance.png` - Judge vs majority vote
+
 ## Notes
 - if it is needed and we didn't provide it , pls tell us if we should have given you acess to the api key 
 - All intermediate outputs are saved to `data/raw_outputs/` for debugging
