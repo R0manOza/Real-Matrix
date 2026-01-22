@@ -283,7 +283,7 @@ The stages must be run in order:
 Each stage checks for required previous stages and will show an error if dependencies are missing.
 
 ## Notes
-
+- if it is needed and we didn't provide it , pls tell us if we should have given you acess to the api key 
 - All intermediate outputs are saved to `data/raw_outputs/` for debugging
 - Final results are saved to `data/results/`
 - Make sure you have API credits available - this makes many API calls per problem:
@@ -295,3 +295,4 @@ Each stage checks for required previous stages and will show an error if depende
   - **Total: ~17 API calls per problem**
 - All modules automatically handle models that don't support JSON response format
 - You can run stages separately to inspect intermediate results before proceeding
+## Side note : RUNNING THIS WAS TOO RICH FOR MY BLOOD ... WE STILL DID IT THO 
