@@ -1,0 +1,60 @@
+{
+  "problem_id": "math_004",
+  "problem_text": "How many distinct ways can you arrange the letters in MISSISSIPPI such that no two I's are adjacent?",
+  "judgment": {
+    "judge_model": "gpt-4-turbo-preview",
+    "winner": "solver_1",
+    "winning_answer": "88200",
+    "evaluation": {
+      "solver_1": {
+        "original_score": 0.1,
+        "refined_score": 0.9,
+        "reasoning_quality": "good",
+        "likely_correct": true
+      },
+      "solver_2": {
+        "original_score": 0.5,
+        "refined_score": 0.6,
+        "reasoning_quality": "fair",
+        "likely_correct": false
+      },
+      "solver_3": {
+        "original_score": 0.6,
+        "refined_score": 0.4,
+        "reasoning_quality": "fair",
+        "likely_correct": false
+      }
+    },
+    "selection_reasoning": "Solver_1's refined solution correctly applies the principles of permutations and combinations to solve the problem, addressing the condition that no two I's can be adjacent in a logical and straightforward manner. The calculation provided in the refined solution is accurate and directly addresses the problem's constraints, resulting in a final answer of 88200. The peer reviews for solver_1's solution indicate a misunderstanding of the refined solution's approach, which was actually correct upon re-evaluation. Solver_2 and solver_3 both provided solutions that contained critical calculation errors or misunderstandings of the problem's constraints, leading to incorrect final answers. Solver_1's refined solution stands out as the most logically sound and mathematically accurate, making it the winning solution.",
+    "consensus_analysis": "There was a significant amount of disagreement among the solvers, primarily due to calculation errors and misunderstandings of the problem's constraints. Solver_1's original solution was significantly flawed, but their refined solution correctly addressed the problem. Solvers 2 and 3 both had issues with their calculations and did not fully correct these in their refined solutions. This lack of consensus highlights the importance of carefully reviewing and understanding both the problem statement and the mathematical principles involved in the solution.",
+    "confidence": 0.95,
+    "raw_response": {
+      "winner": "solver_1",
+      "winning_answer": "88200",
+      "evaluation": {
+        "solver_1": {
+          "original_score": 0.1,
+          "refined_score": 0.9,
+          "reasoning_quality": "good",
+          "likely_correct": true
+        },
+        "solver_2": {
+          "original_score": 0.5,
+          "refined_score": 0.6,
+          "reasoning_quality": "fair",
+          "likely_correct": false
+        },
+        "solver_3": {
+          "original_score": 0.6,
+          "refined_score": 0.4,
+          "reasoning_quality": "fair",
+          "likely_correct": false
+        }
+      },
+      "selection_reasoning": "Solver_1's refined solution correctly applies the principles of permutations and combinations to solve the problem, addressing the condition that no two I's can be adjacent in a logical and straightforward manner. The calculation provided in the refined solution is accurate and directly addresses the problem's constraints, resulting in a final answer of 88200. The peer reviews for solver_1's solution indicate a misunderstanding of the refined solution's approach, which was actually correct upon re-evaluation. Solver_2 and solver_3 both provided solutions that contained critical calculation errors or misunderstandings of the problem's constraints, leading to incorrect final answers. Solver_1's refined solution stands out as the most logically sound and mathematically accurate, making it the winning solution.",
+      "consensus_analysis": "There was a significant amount of disagreement among the solvers, primarily due to calculation errors and misunderstandings of the problem's constraints. Solver_1's original solution was significantly flawed, but their refined solution correctly addressed the problem. Solvers 2 and 3 both had issues with their calculations and did not fully correct these in their refined solutions. This lack of consensus highlights the importance of carefully reviewing and understanding both the problem statement and the mathematical principles involved in the solution.",
+      "confidence": 0.95
+    }
+  },
+  "timestamp": "2026-01-17 05:16:34"
+}

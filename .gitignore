@@ -39,10 +39,7 @@ secrets.py
 *~
 
 # Data outputs (keep structure, ignore actual data)
-data/raw_outputs/*
-!data/raw_outputs/.gitkeep
-data/results/*
-!data/results/.gitkeep
+
 
 # Jupyter
 .ipynb_checkpoints

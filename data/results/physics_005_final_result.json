@@ -1,0 +1,60 @@
+{
+  "problem_id": "physics_005",
+  "problem_text": "Light of wavelength 500 nm is incident on a double slit with separation d = 0.1 mm. The screen is 2 m away. What is the distance between the 3rd bright fringe and the central maximum?",
+  "judgment": {
+    "judge_model": "gpt-4-turbo-preview",
+    "winner": "solver_1",
+    "winning_answer": "30 mm",
+    "evaluation": {
+      "solver_1": {
+        "original_score": 0.9,
+        "refined_score": 1.0,
+        "reasoning_quality": "excellent",
+        "likely_correct": true
+      },
+      "solver_2": {
+        "original_score": 0.9,
+        "refined_score": 1.0,
+        "reasoning_quality": "good",
+        "likely_correct": true
+      },
+      "solver_3": {
+        "original_score": 0.9,
+        "refined_score": 0.95,
+        "reasoning_quality": "good",
+        "likely_correct": true
+      }
+    },
+    "selection_reasoning": "All solvers provided fundamentally correct solutions to the problem, with minor differences in their approaches and explanations. Solver_1's refined solution stood out due to its detailed explanation, clear step-by-step breakdown of the unit conversion process, and ensuring consistency in the units used to present the final answer. This not only addressed the problem accurately but also enhanced the educational value of the solution. While Solver_2 and Solver_3 also provided correct solutions, Solver_1's approach to refining their solution and the clarity of their explanation gave them a slight edge in terms of reasoning quality.",
+    "consensus_analysis": "There was a consensus among the solvers regarding the final answer, with all arriving at 30 mm. This agreement, despite minor discrepancies in the presentation and explanation of their solutions, indicates a strong understanding of the underlying physics principles and the mathematical calculations involved.",
+    "confidence": 0.98,
+    "raw_response": {
+      "winner": "solver_1",
+      "winning_answer": "30 mm",
+      "evaluation": {
+        "solver_1": {
+          "original_score": 0.9,
+          "refined_score": 1.0,
+          "reasoning_quality": "excellent",
+          "likely_correct": true
+        },
+        "solver_2": {
+          "original_score": 0.9,
+          "refined_score": 1.0,
+          "reasoning_quality": "good",
+          "likely_correct": true
+        },
+        "solver_3": {
+          "original_score": 0.9,
+          "refined_score": 0.95,
+          "reasoning_quality": "good",
+          "likely_correct": true
+        }
+      },
+      "selection_reasoning": "All solvers provided fundamentally correct solutions to the problem, with minor differences in their approaches and explanations. Solver_1's refined solution stood out due to its detailed explanation, clear step-by-step breakdown of the unit conversion process, and ensuring consistency in the units used to present the final answer. This not only addressed the problem accurately but also enhanced the educational value of the solution. While Solver_2 and Solver_3 also provided correct solutions, Solver_1's approach to refining their solution and the clarity of their explanation gave them a slight edge in terms of reasoning quality.",
+      "consensus_analysis": "There was a consensus among the solvers regarding the final answer, with all arriving at 30 mm. This agreement, despite minor discrepancies in the presentation and explanation of their solutions, indicates a strong understanding of the underlying physics principles and the mathematical calculations involved.",
+      "confidence": 0.98
+    }
+  },
+  "timestamp": "2026-01-22 23:49:03"
+}

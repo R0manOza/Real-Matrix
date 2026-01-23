@@ -1,0 +1,87 @@
+{
+  "problem_id": "physics_005",
+  "problem_text": "Light of wavelength 500 nm is incident on a double slit with separation d = 0.1 mm. The screen is 2 m away. What is the distance between the 3rd bright fringe and the central maximum?",
+  "solutions": {
+    "solver_1": {
+      "solver_id": "solver_1",
+      "model_name": "gpt-4",
+      "model_id": "solver_3",
+      "problem_text": "Light of wavelength 500 nm is incident on a double slit with separation d = 0.1 mm. The screen is 2 m away. What is the distance between the 3rd bright fringe and the central maximum?",
+      "reasoning_steps": [
+        "Step 1: The problem is asking for the distance between the 3rd bright fringe and the central maximum. The double slit interference formula for bright fringes is given by x = mλL/d, where m is the order of the fringe, λ is the wavelength of the light, L is the distance to the screen, and d is the separation of the slits.",
+        "Step 2: Substituting the given values into the formula, we get x = 3 * (500 x 10^-9 m) * (2 m) / (0.1 x 10^-3 m). Note that the wavelength is converted to meters because the other distances in the formula are given in meters.",
+        "Step 3: Simplifying the equation yields x = 3 * (500 x 10^-9 m) * (2 m) / (0.1 x 10^-3 m) = 0.03 m = 3 cm. Therefore, the distance between the 3rd bright fringe and the central maximum is 3 cm."
+      ],
+      "final_answer": "3 cm",
+      "confidence": 1.0,
+      "approach": "To solve the problem, I used the formula for the position of bright fringes in a double slit interference pattern, substituted the given values, and simplified the equation to find the distance between the 3rd bright fringe and the central maximum.",
+      "raw_response": {
+        "reasoning_steps": [
+          "Step 1: The problem is asking for the distance between the 3rd bright fringe and the central maximum. The double slit interference formula for bright fringes is given by x = mλL/d, where m is the order of the fringe, λ is the wavelength of the light, L is the distance to the screen, and d is the separation of the slits.",
+          "Step 2: Substituting the given values into the formula, we get x = 3 * (500 x 10^-9 m) * (2 m) / (0.1 x 10^-3 m). Note that the wavelength is converted to meters because the other distances in the formula are given in meters.",
+          "Step 3: Simplifying the equation yields x = 3 * (500 x 10^-9 m) * (2 m) / (0.1 x 10^-3 m) = 0.03 m = 3 cm. Therefore, the distance between the 3rd bright fringe and the central maximum is 3 cm."
+        ],
+        "final_answer": "3 cm",
+        "confidence": 1.0,
+        "approach": "To solve the problem, I used the formula for the position of bright fringes in a double slit interference pattern, substituted the given values, and simplified the equation to find the distance between the 3rd bright fringe and the central maximum."
+      }
+    },
+    "solver_2": {
+      "solver_id": "solver_2",
+      "model_name": "gpt-4",
+      "model_id": "solver_1",
+      "problem_text": "Light of wavelength 500 nm is incident on a double slit with separation d = 0.1 mm. The screen is 2 m away. What is the distance between the 3rd bright fringe and the central maximum?",
+      "reasoning_steps": [
+        "Step 1: Understand the problem. The question is asking for the distance between the 3rd bright fringe and the central maximum. The formula for distance from the central max to any bright fringe in a double slit experiment is y = m*λL/d, where m is the order number, λ is the wavelength, L is the distance to the screen, and d is the separation between the slits.",
+        "Step 2: Convert given values to compatible units. The wavelength is given in nanometers, but we need it in meters. So, λ = 500 nm = 500*10^-9 m. The slit separation is given in mm, but we need it in meters. So, d = 0.1 mm = 0.1*10^-3 m.",
+        "Step 3: Substitute the values into the formula. We're looking for the 3rd bright fringe, so m = 3. L = 2 m (given). Substituting these values into the formula, we get y = 3 * 500*10^-9 m * 2 m / 0.1*10^-3 m.",
+        "Step 4: Perform the calculation. y = 3 * 500*10^-9 m * 2 m / 0.1*10^-3 m = 0.03 m = 3 cm."
+      ],
+      "final_answer": "3 cm",
+      "confidence": 1.0,
+      "approach": "The solution involves converting units to ensure compatibility, then substituting into the formula for the distance from the central max to any bright fringe in a double slit experiment.",
+      "raw_response": {
+        "reasoning_steps": [
+          "Step 1: Understand the problem. The question is asking for the distance between the 3rd bright fringe and the central maximum. The formula for distance from the central max to any bright fringe in a double slit experiment is y = m*λL/d, where m is the order number, λ is the wavelength, L is the distance to the screen, and d is the separation between the slits.",
+          "Step 2: Convert given values to compatible units. The wavelength is given in nanometers, but we need it in meters. So, λ = 500 nm = 500*10^-9 m. The slit separation is given in mm, but we need it in meters. So, d = 0.1 mm = 0.1*10^-3 m.",
+          "Step 3: Substitute the values into the formula. We're looking for the 3rd bright fringe, so m = 3. L = 2 m (given). Substituting these values into the formula, we get y = 3 * 500*10^-9 m * 2 m / 0.1*10^-3 m.",
+          "Step 4: Perform the calculation. y = 3 * 500*10^-9 m * 2 m / 0.1*10^-3 m = 0.03 m = 3 cm."
+        ],
+        "final_answer": "3 cm",
+        "confidence": 1.0,
+        "approach": "The solution involves converting units to ensure compatibility, then substituting into the formula for the distance from the central max to any bright fringe in a double slit experiment."
+      }
+    },
+    "solver_3": {
+      "solver_id": "solver_3",
+      "model_name": "gpt-4-turbo-preview",
+      "model_id": "solver_2",
+      "problem_text": "Light of wavelength 500 nm is incident on a double slit with separation d = 0.1 mm. The screen is 2 m away. What is the distance between the 3rd bright fringe and the central maximum?",
+      "reasoning_steps": [
+        "Step 1: Convert the given wavelength from nanometers to meters. 500 nm = 500 x 10^-9 m.",
+        "Step 2: Convert the slit separation distance from millimeters to meters. 0.1 mm = 0.1 x 10^-3 m.",
+        "Step 3: Understand that the location of the bright fringes on the screen can be found using the formula y = (m * lambda * L) / d, where y is the distance from the central maximum, m is the fringe order number (m=0 for central maximum, m=1 for first bright fringe, etc.), lambda is the wavelength of the light, L is the distance to the screen, and d is the slit separation distance.",
+        "Step 4: Plug in the values to find the distance of the 3rd bright fringe (m=3) from the central maximum. Use lambda = 500 x 10^-9 m, L = 2 m, and d = 0.1 x 10^-3 m.",
+        "Step 5: Calculate y = (3 * 500 x 10^-9 m * 2 m) / (0.1 x 10^-3 m) = (3 * 1000 x 10^-9 m) / (0.1 x 10^-3) = 30 x 10^-3 m.",
+        "Step 6: Convert the result back to millimeters for easier comprehension. 30 x 10^-3 m = 30 mm."
+      ],
+      "final_answer": "30 mm",
+      "confidence": 0.99,
+      "approach": "The solution involved converting units to a consistent standard (meters), using the formula for the position of bright fringes in a double slit experiment, and calculating the specific position of the 3rd bright fringe from the central maximum.",
+      "raw_response": {
+        "reasoning_steps": [
+          "Step 1: Convert the given wavelength from nanometers to meters. 500 nm = 500 x 10^-9 m.",
+          "Step 2: Convert the slit separation distance from millimeters to meters. 0.1 mm = 0.1 x 10^-3 m.",
+          "Step 3: Understand that the location of the bright fringes on the screen can be found using the formula y = (m * lambda * L) / d, where y is the distance from the central maximum, m is the fringe order number (m=0 for central maximum, m=1 for first bright fringe, etc.), lambda is the wavelength of the light, L is the distance to the screen, and d is the slit separation distance.",
+          "Step 4: Plug in the values to find the distance of the 3rd bright fringe (m=3) from the central maximum. Use lambda = 500 x 10^-9 m, L = 2 m, and d = 0.1 x 10^-3 m.",
+          "Step 5: Calculate y = (3 * 500 x 10^-9 m * 2 m) / (0.1 x 10^-3 m) = (3 * 1000 x 10^-9 m) / (0.1 x 10^-3) = 30 x 10^-3 m.",
+          "Step 6: Convert the result back to millimeters for easier comprehension. 30 x 10^-3 m = 30 mm."
+        ],
+        "final_answer": "30 mm",
+        "confidence": 0.99,
+        "approach": "The solution involved converting units to a consistent standard (meters), using the formula for the position of bright fringes in a double slit experiment, and calculating the specific position of the 3rd bright fringe from the central maximum."
+      }
+    }
+  },
+  "timestamp": "2026-01-22 23:46:43"
+}

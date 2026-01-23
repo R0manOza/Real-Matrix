@@ -1,0 +1,60 @@
+{
+  "problem_id": "game_002",
+  "problem_text": "In a sealed-bid auction for an item worth $100 to you, you and one other bidder submit bids simultaneously. The highest bidder wins and pays their bid. What should you bid?",
+  "judgment": {
+    "judge_model": "gpt-4-turbo-preview",
+    "winner": "solver_3",
+    "winning_answer": "$98.50",
+    "evaluation": {
+      "solver_1": {
+        "original_score": 0.7,
+        "refined_score": 0.8,
+        "reasoning_quality": "good",
+        "likely_correct": false
+      },
+      "solver_2": {
+        "original_score": 0.75,
+        "refined_score": 0.85,
+        "reasoning_quality": "good",
+        "likely_correct": false
+      },
+      "solver_3": {
+        "original_score": 0.75,
+        "refined_score": 0.9,
+        "reasoning_quality": "excellent",
+        "likely_correct": true
+      }
+    },
+    "selection_reasoning": "Solver_3's refined solution demonstrates a deep understanding of the auction dynamics, including the consideration of psychological pricing and the variability in the other bidder's strategy. The bid of $98.50 is strategically chosen to maximize the chance of winning without overpaying, and it accounts for the unpredictability of the other bidder's behavior more effectively than the other solutions. The reasoning is comprehensive, and the solution is improved significantly from the original, reflecting a thoughtful consideration of peer feedback. Solver_3's approach to refining their bid to a non-round number to avoid predictability and to consider a broader range of competitor behaviors makes their solution the most strategically sound.",
+    "consensus_analysis": "There was a general agreement among the solvers that bidding close to but not exceeding the item's value to oneself is the optimal strategy. However, the solvers disagreed on the exact bid to place, with their strategies evolving from basic to more nuanced considerations of auction dynamics and competitor behavior. Solver_3's solution, in particular, reflects a more sophisticated analysis that likely provides the best balance between winning the auction and not overpaying.",
+    "confidence": 0.95,
+    "raw_response": {
+      "winner": "solver_3",
+      "winning_answer": "$98.50",
+      "evaluation": {
+        "solver_1": {
+          "original_score": 0.7,
+          "refined_score": 0.8,
+          "reasoning_quality": "good",
+          "likely_correct": false
+        },
+        "solver_2": {
+          "original_score": 0.75,
+          "refined_score": 0.85,
+          "reasoning_quality": "good",
+          "likely_correct": false
+        },
+        "solver_3": {
+          "original_score": 0.75,
+          "refined_score": 0.9,
+          "reasoning_quality": "excellent",
+          "likely_correct": true
+        }
+      },
+      "selection_reasoning": "Solver_3's refined solution demonstrates a deep understanding of the auction dynamics, including the consideration of psychological pricing and the variability in the other bidder's strategy. The bid of $98.50 is strategically chosen to maximize the chance of winning without overpaying, and it accounts for the unpredictability of the other bidder's behavior more effectively than the other solutions. The reasoning is comprehensive, and the solution is improved significantly from the original, reflecting a thoughtful consideration of peer feedback. Solver_3's approach to refining their bid to a non-round number to avoid predictability and to consider a broader range of competitor behaviors makes their solution the most strategically sound.",
+      "consensus_analysis": "There was a general agreement among the solvers that bidding close to but not exceeding the item's value to oneself is the optimal strategy. However, the solvers disagreed on the exact bid to place, with their strategies evolving from basic to more nuanced considerations of auction dynamics and competitor behavior. Solver_3's solution, in particular, reflects a more sophisticated analysis that likely provides the best balance between winning the auction and not overpaying.",
+      "confidence": 0.95
+    }
+  },
+  "timestamp": "2026-01-22 22:56:23"
+}

@@ -1,0 +1,60 @@
+{
+  "problem_id": "game_003",
+  "problem_text": "Two companies are deciding whether to enter a market. If both enter, each loses $10M. If one enters alone, that company gains $50M and the other gets $0. If neither enters, both get $0. What is the Nash equilibrium?",
+  "judgment": {
+    "judge_model": "gpt-4-turbo-preview",
+    "winner": "solver_2",
+    "winning_answer": "There is no pure strategy Nash equilibrium in this game. The Nash equilibrium is likely a mixed strategy, but the specific probabilities defining it cannot be determined with the provided information.",
+    "evaluation": {
+      "solver_1": {
+        "original_score": 0.8,
+        "refined_score": 0.7,
+        "reasoning_quality": "good",
+        "likely_correct": false
+      },
+      "solver_2": {
+        "original_score": 0.85,
+        "refined_score": 0.9,
+        "reasoning_quality": "excellent",
+        "likely_correct": true
+      },
+      "solver_3": {
+        "original_score": 0.7,
+        "refined_score": 0.75,
+        "reasoning_quality": "good",
+        "likely_correct": false
+      }
+    },
+    "selection_reasoning": "Solver_2's refined solution provides the most accurate and comprehensive understanding of the Nash equilibrium in the context of this problem. They correctly identify that there is no pure strategy Nash equilibrium and explain the concept of a mixed strategy Nash equilibrium, which is crucial for understanding the strategic decisions in this scenario. Their reasoning is clear, well-structured, and acknowledges the limitations of the information provided, which aligns with the principles of game theory. The peer reviews support this assessment, and the critiques were effectively addressed in the refined solution.",
+    "consensus_analysis": "There was some disagreement among the solvers regarding the existence of a pure strategy Nash equilibrium. Solver_1 initially identified a pure strategy Nash equilibrium but later revised their solution towards a mixed strategy without fully committing to the absence of a pure strategy. Solver_3's solutions suggested a misunderstanding of the Nash equilibrium concept by proposing multiple Nash equilibriums, including non-entry as an equilibrium, which contradicts the game's payoff structure. Solver_2 consistently recognized the absence of a pure strategy Nash equilibrium and correctly focused on the mixed strategy Nash equilibrium, demonstrating a deeper understanding of the game's dynamics.",
+    "confidence": 0.95,
+    "raw_response": {
+      "winner": "solver_2",
+      "winning_answer": "There is no pure strategy Nash equilibrium in this game. The Nash equilibrium is likely a mixed strategy, but the specific probabilities defining it cannot be determined with the provided information.",
+      "evaluation": {
+        "solver_1": {
+          "original_score": 0.8,
+          "refined_score": 0.7,
+          "reasoning_quality": "good",
+          "likely_correct": false
+        },
+        "solver_2": {
+          "original_score": 0.85,
+          "refined_score": 0.9,
+          "reasoning_quality": "excellent",
+          "likely_correct": true
+        },
+        "solver_3": {
+          "original_score": 0.7,
+          "refined_score": 0.75,
+          "reasoning_quality": "good",
+          "likely_correct": false
+        }
+      },
+      "selection_reasoning": "Solver_2's refined solution provides the most accurate and comprehensive understanding of the Nash equilibrium in the context of this problem. They correctly identify that there is no pure strategy Nash equilibrium and explain the concept of a mixed strategy Nash equilibrium, which is crucial for understanding the strategic decisions in this scenario. Their reasoning is clear, well-structured, and acknowledges the limitations of the information provided, which aligns with the principles of game theory. The peer reviews support this assessment, and the critiques were effectively addressed in the refined solution.",
+      "consensus_analysis": "There was some disagreement among the solvers regarding the existence of a pure strategy Nash equilibrium. Solver_1 initially identified a pure strategy Nash equilibrium but later revised their solution towards a mixed strategy without fully committing to the absence of a pure strategy. Solver_3's solutions suggested a misunderstanding of the Nash equilibrium concept by proposing multiple Nash equilibriums, including non-entry as an equilibrium, which contradicts the game's payoff structure. Solver_2 consistently recognized the absence of a pure strategy Nash equilibrium and correctly focused on the mixed strategy Nash equilibrium, demonstrating a deeper understanding of the game's dynamics.",
+      "confidence": 0.95
+    }
+  },
+  "timestamp": "2026-01-22 23:01:04"
+}

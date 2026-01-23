@@ -1,0 +1,111 @@
+{
+  "problem_id": "math_007",
+  "self_assessments": [
+    {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.7
+      },
+      "reasoning": "As an AI, I'm highly efficient in solving mathematical problems, which gives me a high confidence in the Solver role. I can also evaluate solutions, but my ability to judge may be less nuanced than a human's, so I have a slightly lower confidence as a Judge.",
+      "model_id": "solver_1",
+      "model_name": "gpt-4"
+    },
+    {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.85,
+        "Judge": 0.75
+      },
+      "reasoning": "I have a strong mathematical foundation, making me well-suited to approach the problem logically and develop a solution. My ability to generate step-by-step solutions would make me a good fit for the Solver role. While I can also critically evaluate solutions and identify the best one, my slightly lower confidence in being a Judge stems from the variability and creativity inherent in problem-solving, which may lead to multiple valid solutions that are not immediately comparable without a detailed analysis.",
+      "model_id": "solver_2",
+      "model_name": "gpt-4-turbo-preview"
+    },
+    {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.7
+      },
+      "reasoning": "As an assistant, I'm capable of solving mathematical problems and explaining the step-by-step process, hence the higher confidence in the Solver role. Although I can also evaluate solutions accurately, the nature of this problem makes it more straightforward to solve than to judge different solutions.",
+      "model_id": "solver_3",
+      "model_name": "gpt-4"
+    },
+    {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.8
+      },
+      "reasoning": "I am proficient at applying mathematical principles and techniques to solve equations like x^2 + y^2 = 2024, which involves understanding of number theory and ability to work through systematic approaches to identify all integer solutions. My ability to generate solutions is slightly higher than evaluating others' solutions because I rely on algorithms and formulas to derive answers. However, I'm also quite capable of understanding and assessing the validity and efficiency of solutions provided by others, making me a good fit for the Judge role as well.",
+      "model_id": "judge",
+      "model_name": "gpt-4-turbo-preview"
+    }
+  ],
+  "final_assignments": {
+    "solver_1": {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.7
+      },
+      "reasoning": "As an AI, I'm highly efficient in solving mathematical problems, which gives me a high confidence in the Solver role. I can also evaluate solutions, but my ability to judge may be less nuanced than a human's, so I have a slightly lower confidence as a Judge.",
+      "model_id": "solver_1",
+      "model_name": "gpt-4"
+    },
+    "solver_2": {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.7
+      },
+      "reasoning": "As an assistant, I'm capable of solving mathematical problems and explaining the step-by-step process, hence the higher confidence in the Solver role. Although I can also evaluate solutions accurately, the nature of this problem makes it more straightforward to solve than to judge different solutions.",
+      "model_id": "solver_3",
+      "model_name": "gpt-4"
+    },
+    "solver_3": {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.8
+      },
+      "reasoning": "I am proficient at applying mathematical principles and techniques to solve equations like x^2 + y^2 = 2024, which involves understanding of number theory and ability to work through systematic approaches to identify all integer solutions. My ability to generate solutions is slightly higher than evaluating others' solutions because I rely on algorithms and formulas to derive answers. However, I'm also quite capable of understanding and assessing the validity and efficiency of solutions provided by others, making me a good fit for the Judge role as well.",
+      "model_id": "judge",
+      "model_name": "gpt-4-turbo-preview"
+    },
+    "judge": {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.85,
+        "Judge": 0.75
+      },
+      "reasoning": "I have a strong mathematical foundation, making me well-suited to approach the problem logically and develop a solution. My ability to generate step-by-step solutions would make me a good fit for the Solver role. While I can also critically evaluate solutions and identify the best one, my slightly lower confidence in being a Judge stems from the variability and creativity inherent in problem-solving, which may lead to multiple valid solutions that are not immediately comparable without a detailed analysis.",
+      "model_id": "solver_2",
+      "model_name": "gpt-4-turbo-preview"
+    }
+  }
+}

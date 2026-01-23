@@ -1,0 +1,60 @@
+{
+  "problem_id": "math_005",
+  "problem_text": "What is the sum of all positive integers n such that n^2 + n + 1 is divisible by 7?",
+  "judgment": {
+    "judge_model": "gpt-4-turbo-preview",
+    "winner": "solver_1",
+    "winning_answer": "11",
+    "evaluation": {
+      "solver_1": {
+        "original_score": 0.8,
+        "refined_score": 1.0,
+        "reasoning_quality": "excellent",
+        "likely_correct": true
+      },
+      "solver_2": {
+        "original_score": 0.7,
+        "refined_score": 0.9,
+        "reasoning_quality": "good",
+        "likely_correct": false
+      },
+      "solver_3": {
+        "original_score": 0.5,
+        "refined_score": 0.4,
+        "reasoning_quality": "poor",
+        "likely_correct": false
+      }
+    },
+    "selection_reasoning": "Solver_1's refined solution correctly identifies and sums the integers that satisfy the given condition, correcting an initial oversight and aligning with the mathematical principles of modular arithmetic. The reasoning is methodical and comprehensive, addressing the cyclic nature of modulo operations effectively. Solver_2's approach, while systematic, failed to identify all correct values, and Solver_3's solutions contained critical errors in both the original and refined versions, significantly impacting their correctness and reasoning quality.",
+    "consensus_analysis": "There was a clear disagreement among the solvers regarding the correct approach and the final answer. Solver_1 and Solver_2 initially agreed on the incorrect values but Solver_1 corrected their mistake in the refined solution. Solver_3's approach was consistently incorrect, indicating a lack of consensus on the methodology and the final answer.",
+    "confidence": 0.95,
+    "raw_response": {
+      "winner": "solver_1",
+      "winning_answer": "11",
+      "evaluation": {
+        "solver_1": {
+          "original_score": 0.8,
+          "refined_score": 1.0,
+          "reasoning_quality": "excellent",
+          "likely_correct": true
+        },
+        "solver_2": {
+          "original_score": 0.7,
+          "refined_score": 0.9,
+          "reasoning_quality": "good",
+          "likely_correct": false
+        },
+        "solver_3": {
+          "original_score": 0.5,
+          "refined_score": 0.4,
+          "reasoning_quality": "poor",
+          "likely_correct": false
+        }
+      },
+      "selection_reasoning": "Solver_1's refined solution correctly identifies and sums the integers that satisfy the given condition, correcting an initial oversight and aligning with the mathematical principles of modular arithmetic. The reasoning is methodical and comprehensive, addressing the cyclic nature of modulo operations effectively. Solver_2's approach, while systematic, failed to identify all correct values, and Solver_3's solutions contained critical errors in both the original and refined versions, significantly impacting their correctness and reasoning quality.",
+      "consensus_analysis": "There was a clear disagreement among the solvers regarding the correct approach and the final answer. Solver_1 and Solver_2 initially agreed on the incorrect values but Solver_1 corrected their mistake in the refined solution. Solver_3's approach was consistently incorrect, indicating a lack of consensus on the methodology and the final answer.",
+      "confidence": 0.95
+    }
+  },
+  "timestamp": "2026-01-17 05:31:04"
+}

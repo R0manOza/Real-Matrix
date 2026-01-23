@@ -1,0 +1,60 @@
+{
+  "problem_id": "game_001",
+  "problem_text": "Two players alternately take coins from a pile of 21 coins. On each turn, a player can take 1, 2, or 3 coins. The player who takes the last coin wins. If you go first, what is your winning strategy?",
+  "judgment": {
+    "judge_model": "gpt-4-turbo-preview",
+    "winner": "solver_3",
+    "winning_answer": "On your first move, take 1 coin to leave 20. Then, adjust your moves to leave a multiple of 4 coins after the opponent's turn. This strategy, supplemented by examples and the rationale behind the multiples of 4, provides a comprehensive pathway to victory.",
+    "evaluation": {
+      "solver_1": {
+        "original_score": 0.9,
+        "refined_score": 0.95,
+        "reasoning_quality": "excellent",
+        "likely_correct": true
+      },
+      "solver_2": {
+        "original_score": 0.9,
+        "refined_score": 0.95,
+        "reasoning_quality": "excellent",
+        "likely_correct": true
+      },
+      "solver_3": {
+        "original_score": 0.95,
+        "refined_score": 0.95,
+        "reasoning_quality": "excellent",
+        "likely_correct": true
+      }
+    },
+    "selection_reasoning": "All solvers provided correct solutions with a clear understanding of the winning strategy, which involves ensuring the number of coins left after each turn is a multiple of 4. Solver_3's refined solution stands out for its comprehensive explanation, including explicit examples, a discussion on non-optimal opponent plays, and a deeper explanation of the strategy's rationale. This not only addresses the original problem effectively but also enhances understanding by anticipating and explaining how to adapt to various opponent moves. The inclusion of examples and addressing non-optimal plays by the opponent makes Solver_3's solution the most robust and understandable.",
+    "consensus_analysis": "There is a strong consensus among the solvers regarding the winning strategy, which involves leaving a multiple of 4 coins after each turn. All peer reviews confirm the correctness of the solutions, indicating a high level of agreement on the strategy's validity and effectiveness.",
+    "confidence": 0.98,
+    "raw_response": {
+      "winner": "solver_3",
+      "winning_answer": "On your first move, take 1 coin to leave 20. Then, adjust your moves to leave a multiple of 4 coins after the opponent's turn. This strategy, supplemented by examples and the rationale behind the multiples of 4, provides a comprehensive pathway to victory.",
+      "evaluation": {
+        "solver_1": {
+          "original_score": 0.9,
+          "refined_score": 0.95,
+          "reasoning_quality": "excellent",
+          "likely_correct": true
+        },
+        "solver_2": {
+          "original_score": 0.9,
+          "refined_score": 0.95,
+          "reasoning_quality": "excellent",
+          "likely_correct": true
+        },
+        "solver_3": {
+          "original_score": 0.95,
+          "refined_score": 0.95,
+          "reasoning_quality": "excellent",
+          "likely_correct": true
+        }
+      },
+      "selection_reasoning": "All solvers provided correct solutions with a clear understanding of the winning strategy, which involves ensuring the number of coins left after each turn is a multiple of 4. Solver_3's refined solution stands out for its comprehensive explanation, including explicit examples, a discussion on non-optimal opponent plays, and a deeper explanation of the strategy's rationale. This not only addresses the original problem effectively but also enhances understanding by anticipating and explaining how to adapt to various opponent moves. The inclusion of examples and addressing non-optimal plays by the opponent makes Solver_3's solution the most robust and understandable.",
+      "consensus_analysis": "There is a strong consensus among the solvers regarding the winning strategy, which involves leaving a multiple of 4 coins after each turn. All peer reviews confirm the correctness of the solutions, indicating a high level of agreement on the strategy's validity and effectiveness.",
+      "confidence": 0.98
+    }
+  },
+  "timestamp": "2026-01-17 20:56:50"
+}

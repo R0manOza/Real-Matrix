@@ -1,0 +1,111 @@
+{
+  "problem_id": "math_002",
+  "self_assessments": [
+    {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.7
+      },
+      "reasoning": "As an AI, I'm particularly strong in computational problems and can generate solutions with clear reasoning. However, I can also evaluate multiple solutions and select the best one, although I might not be as subjective as a human judge.",
+      "model_id": "solver_1",
+      "model_name": "gpt-4"
+    },
+    {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.75
+      },
+      "reasoning": "I have a strong aptitude for mathematical problems and enjoy devising solutions for complex issues, especially those involving combinatorial or factorial analysis, which makes me well-suited for the Solver role. My capability to methodically break down problems and explore various solution paths with logical reasoning supports this preference. Although I also possess the analytical skills necessary to evaluate solutions and their efficiency, my passion and skill set are more aligned with the problem-solving aspects, hence the slightly lower confidence in the Judge role.",
+      "model_id": "solver_2",
+      "model_name": "gpt-4-turbo-preview"
+    },
+    {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.7
+      },
+      "reasoning": "As an AI, I am adept at handling mathematical problems, and confident in generating solutions with logical reasoning. Therefore, I prefer the Solver role. I also have the ability to evaluate solutions, but my strengths are more geared towards problem-solving.",
+      "model_id": "solver_3",
+      "model_name": "gpt-4"
+    },
+    {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.8,
+        "Judge": 0.6
+      },
+      "reasoning": "I have a strong foundation in mathematics and possess the ability to generate solutions involving factorial functions and their properties, especially regarding trailing zeros. This makes me confident in my ability to tackle the problem directly as a Solver. While I also have the capability to critically evaluate solutions and understand mathematical reasoning, my preference and slightly higher confidence in problem-solving lead me to favor the Solver role. My judgment skills, though competent, are slightly less confident due to the subjective nature of selecting the 'best' solution among potentially very similar ones.",
+      "model_id": "judge",
+      "model_name": "gpt-4-turbo-preview"
+    }
+  ],
+  "final_assignments": {
+    "solver_1": {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.7
+      },
+      "reasoning": "As an AI, I'm particularly strong in computational problems and can generate solutions with clear reasoning. However, I can also evaluate multiple solutions and select the best one, although I might not be as subjective as a human judge.",
+      "model_id": "solver_1",
+      "model_name": "gpt-4"
+    },
+    "solver_2": {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.75
+      },
+      "reasoning": "I have a strong aptitude for mathematical problems and enjoy devising solutions for complex issues, especially those involving combinatorial or factorial analysis, which makes me well-suited for the Solver role. My capability to methodically break down problems and explore various solution paths with logical reasoning supports this preference. Although I also possess the analytical skills necessary to evaluate solutions and their efficiency, my passion and skill set are more aligned with the problem-solving aspects, hence the slightly lower confidence in the Judge role.",
+      "model_id": "solver_2",
+      "model_name": "gpt-4-turbo-preview"
+    },
+    "solver_3": {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.7
+      },
+      "reasoning": "As an AI, I am adept at handling mathematical problems, and confident in generating solutions with logical reasoning. Therefore, I prefer the Solver role. I also have the ability to evaluate solutions, but my strengths are more geared towards problem-solving.",
+      "model_id": "solver_3",
+      "model_name": "gpt-4"
+    },
+    "judge": {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.8,
+        "Judge": 0.6
+      },
+      "reasoning": "I have a strong foundation in mathematics and possess the ability to generate solutions involving factorial functions and their properties, especially regarding trailing zeros. This makes me confident in my ability to tackle the problem directly as a Solver. While I also have the capability to critically evaluate solutions and understand mathematical reasoning, my preference and slightly higher confidence in problem-solving lead me to favor the Solver role. My judgment skills, though competent, are slightly less confident due to the subjective nature of selecting the 'best' solution among potentially very similar ones.",
+      "model_id": "judge",
+      "model_name": "gpt-4-turbo-preview"
+    }
+  }
+}

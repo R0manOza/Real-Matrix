@@ -1,0 +1,70 @@
+{
+  "system_metrics": {
+    "total_problems": 25,
+    "processed_problems": 15,
+    "correct_final_answers": 6,
+    "overall_accuracy": 0.4,
+    "by_category": {
+      "game_theory": {
+        "total": 3,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "math_logic": {
+        "total": 6,
+        "correct": 2,
+        "accuracy": 0.3333333333333333
+      },
+      "physics": {
+        "total": 6,
+        "correct": 4,
+        "accuracy": 0.6666666666666666
+      }
+    }
+  },
+  "improvement_metrics": {
+    "total_with_refinement": 15,
+    "improved": 2,
+    "worsened": 0,
+    "unchanged": 13,
+    "improvement_rate": 0.13333333333333333
+  },
+  "consensus_metrics": {
+    "total": 15,
+    "full_consensus": 5,
+    "partial_consensus": 4,
+    "no_consensus": 6,
+    "consensus_rate": 0.3333333333333333
+  },
+  "judge_metrics": {
+    "total_disagreements": 10,
+    "judge_correct": 1,
+    "judge_accuracy": 0.1,
+    "majority_vote_correct": 0,
+    "majority_vote_accuracy": 0.0
+  },
+  "baselines": {
+    "majority_vote": {
+      "answers": {
+        "game_001": "the winning strategy is to initially take 1 coin. for each subsequent turn, take enough coins to ensure that the number of coins left in the pile is a multiple of 4. this can be achieved by subtracting the number of coins the other player took from 4. continue this strategy until there are 4 coins left, at which point you can ensure victory regardless of the other player's move.",
+        "game_002": "to balance the need to win with the desire to pay as less as possible, a bid of $90 could be a reasonable choice, assuming the other bidder values the item similarly.",
+        "game_003": "the nash equilibriums are when either company 1 enters alone or company 2 enters alone.",
+        "math_001": "153",
+        "math_002": "400",
+        "math_003": "8128",
+        "math_004": "286",
+        "math_005": "6",
+        "math_006": "10120",
+        "physics_001": "0.8333",
+        "physics_002": "2",
+        "physics_003": "2",
+        "physics_004": "10",
+        "physics_005": "0.03",
+        "physics_006": "15"
+      },
+      "correct": 5,
+      "total": 15,
+      "accuracy": 0.3333333333333333
+    }
+  }
+}

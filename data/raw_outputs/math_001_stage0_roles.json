@@ -1,0 +1,111 @@
+{
+  "problem_id": "math_001",
+  "self_assessments": [
+    {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 1.0,
+        "Judge": 0.7
+      },
+      "reasoning": "As an AI, I am capable of generating solutions through algorithmic processes and mathematical reasoning, hence my high confidence as a Solver. However, evaluating the quality of multiple solutions requires understanding the nuances of human reasoning, which is why my confidence as a Judge is slightly lower.",
+      "model_id": "solver_1",
+      "model_name": "gpt-4"
+    },
+    {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.8
+      },
+      "reasoning": "I have a strong foundation in combinatorial mathematics and problem-solving, which makes me well-suited to generate independent solutions involving mathematical patterns and sequences, such as tiling problems. My ability to apply logical and structured approaches to solve problems is high, hence the higher confidence as a Solver. As a Judge, I can also evaluate solutions effectively, but my preference and slightly higher confidence lie in direct problem-solving, where I can leverage my skills to devise and explain solutions clearly.",
+      "model_id": "solver_2",
+      "model_name": "gpt-4-turbo-preview"
+    },
+    {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 1.0,
+        "Judge": 0.7
+      },
+      "reasoning": "As an AI, I'm well suited to generate independent solutions with step-by-step reasoning, especially for mathematical problems such as this. However, I can also evaluate multiple solutions and select the best one, but with slightly less confidence as it requires subjective decision making.",
+      "model_id": "solver_3",
+      "model_name": "gpt-4"
+    },
+    {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.75
+      },
+      "reasoning": "I am well-suited to the Solver role because I can systematically approach the problem using mathematical or computational techniques to generate solutions. I can apply principles of combinatorics and recursion to solve the tiling problem efficiently. My confidence as a Judge is slightly lower because, while I can evaluate solutions based on logical soundness and efficiency, my strength lies more in problem-solving and algorithm design than in comparing and critiquing the nuanced differences between multiple correct solutions.",
+      "model_id": "judge",
+      "model_name": "gpt-4-turbo-preview"
+    }
+  ],
+  "final_assignments": {
+    "solver_1": {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 1.0,
+        "Judge": 0.7
+      },
+      "reasoning": "As an AI, I am capable of generating solutions through algorithmic processes and mathematical reasoning, hence my high confidence as a Solver. However, evaluating the quality of multiple solutions requires understanding the nuances of human reasoning, which is why my confidence as a Judge is slightly lower.",
+      "model_id": "solver_1",
+      "model_name": "gpt-4"
+    },
+    "solver_2": {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 1.0,
+        "Judge": 0.7
+      },
+      "reasoning": "As an AI, I'm well suited to generate independent solutions with step-by-step reasoning, especially for mathematical problems such as this. However, I can also evaluate multiple solutions and select the best one, but with slightly less confidence as it requires subjective decision making.",
+      "model_id": "solver_3",
+      "model_name": "gpt-4"
+    },
+    "solver_3": {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.8
+      },
+      "reasoning": "I have a strong foundation in combinatorial mathematics and problem-solving, which makes me well-suited to generate independent solutions involving mathematical patterns and sequences, such as tiling problems. My ability to apply logical and structured approaches to solve problems is high, hence the higher confidence as a Solver. As a Judge, I can also evaluate solutions effectively, but my preference and slightly higher confidence lie in direct problem-solving, where I can leverage my skills to devise and explain solutions clearly.",
+      "model_id": "solver_2",
+      "model_name": "gpt-4-turbo-preview"
+    },
+    "judge": {
+      "role_preferences": [
+        "Solver",
+        "Judge"
+      ],
+      "confidence_by_role": {
+        "Solver": 0.9,
+        "Judge": 0.75
+      },
+      "reasoning": "I am well-suited to the Solver role because I can systematically approach the problem using mathematical or computational techniques to generate solutions. I can apply principles of combinatorics and recursion to solve the tiling problem efficiently. My confidence as a Judge is slightly lower because, while I can evaluate solutions based on logical soundness and efficiency, my strength lies more in problem-solving and algorithm design than in comparing and critiquing the nuanced differences between multiple correct solutions.",
+      "model_id": "judge",
+      "model_name": "gpt-4-turbo-preview"
+    }
+  }
+}

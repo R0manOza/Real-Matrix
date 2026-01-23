@@ -1,0 +1,91 @@
+{
+  "problem_id": "physics_001",
+  "problem_text": "A satellite of mass m orbits Earth in a circular orbit at altitude h = 400 km. If the satellite's speed is increased by 20%, what is the new orbital period as a fraction of the original period? (Assume Earth's radius R = 6371 km and ignore atmospheric drag)",
+  "solutions": {
+    "solver_1": {
+      "solver_id": "solver_1",
+      "model_name": "gpt-4",
+      "model_id": "solver_3",
+      "problem_text": "A satellite of mass m orbits Earth in a circular orbit at altitude h = 400 km. If the satellite's speed is increased by 20%, what is the new orbital period as a fraction of the original period? (Assume Earth's radius R = 6371 km and ignore atmospheric drag)",
+      "reasoning_steps": [
+        "Step 1: Understand the problem. We're asked to find the new orbital period of the satellite after its speed is increased by 20%. The period of a satellite is given by the formula T = 2pi(R+h)/v where T is the period, R is the Earth's radius, h is the altitude, and v is the velocity of the satellite.",
+        "Step 2: Calculate the new velocity. If the satellite's speed is increased by 20%, then the new velocity is v' = 1.2v.",
+        "Step 3: Calculate the new period. Substituting the new velocity into the period formula, we get T' = 2pi(R+h)/v' = 2pi(R+h)/(1.2v).",
+        "Step 4: Find the new period as a fraction of the original period. This is given by T'/T = (2pi(R+h)/(1.2v))/(2pi(R+h)/v) = 1/1.2 = 0.8333."
+      ],
+      "final_answer": "0.8333",
+      "confidence": 1.0,
+      "approach": "The problem involves the calculation of the satellite's new orbital period after a 20% increase in speed. The approach was to use the formula for the period of a satellite, adjust for the new speed, and then find the new period as a fraction of the original period.",
+      "raw_response": {
+        "reasoning_steps": [
+          "Step 1: Understand the problem. We're asked to find the new orbital period of the satellite after its speed is increased by 20%. The period of a satellite is given by the formula T = 2pi(R+h)/v where T is the period, R is the Earth's radius, h is the altitude, and v is the velocity of the satellite.",
+          "Step 2: Calculate the new velocity. If the satellite's speed is increased by 20%, then the new velocity is v' = 1.2v.",
+          "Step 3: Calculate the new period. Substituting the new velocity into the period formula, we get T' = 2pi(R+h)/v' = 2pi(R+h)/(1.2v).",
+          "Step 4: Find the new period as a fraction of the original period. This is given by T'/T = (2pi(R+h)/(1.2v))/(2pi(R+h)/v) = 1/1.2 = 0.8333."
+        ],
+        "final_answer": "0.8333",
+        "confidence": 1.0,
+        "approach": "The problem involves the calculation of the satellite's new orbital period after a 20% increase in speed. The approach was to use the formula for the period of a satellite, adjust for the new speed, and then find the new period as a fraction of the original period."
+      }
+    },
+    "solver_2": {
+      "solver_id": "solver_2",
+      "model_name": "gpt-4-turbo-preview",
+      "model_id": "judge",
+      "problem_text": "A satellite of mass m orbits Earth in a circular orbit at altitude h = 400 km. If the satellite's speed is increased by 20%, what is the new orbital period as a fraction of the original period? (Assume Earth's radius R = 6371 km and ignore atmospheric drag)",
+      "reasoning_steps": [
+        "Step 1: Understand the relationship between the speed of the satellite and its orbital period. The orbital period (T) of a satellite is related to its orbital radius (r) and the mass of the Earth (M) through the formula T = 2*pi*sqrt(r^3/G*M), where G is the gravitational constant. This formula is derived from Kepler's third law of planetary motion.",
+        "Step 2: Calculate the original orbital radius of the satellite. The orbital radius is the sum of the altitude of the satellite above Earth's surface and the radius of the Earth. Hence, r = h + R = 400 km + 6371 km = 6771 km.",
+        "Step 3: Understand that increasing the speed of the satellite by 20% means its new speed is 1.2 times its original speed. According to the vis-viva equation, v^2 = G*M*(2/r - 1/a), where v is the orbital speed, and a is the semi-major axis of the orbit, which equals the orbital radius r for a circular orbit.",
+        "Step 4: Recognize that for a circular orbit, the kinetic energy is proportional to the square of the orbital speed (v^2), and the gravitational potential energy is inversely proportional to the orbital radius (r). Thus, increasing the speed by 20% alters the satellite's energy balance and affects its orbit.",
+        "Step 5: Recall that the orbital period is inversely proportional to the 1.5 power of the average orbital speed. Hence, if the speed increases by 20%, the new period T_new is related to the original period T by the relation T_new = T / (1.2)^1.5.",
+        "Step 6: Calculate the new orbital period as a fraction of the original period using the formula from step 5."
+      ],
+      "final_answer": "{ \"new_period_fraction\": \"0.833\" }",
+      "confidence": 0.95,
+      "approach": "The solution was approached by applying Kepler's laws of planetary motion and the vis-viva equation to understand how a change in speed affects the orbital period of a satellite. The relationship between speed and period was used to calculate the new period as a fraction of the original.",
+      "raw_response": {
+        "reasoning_steps": [
+          "Step 1: Understand the relationship between the speed of the satellite and its orbital period. The orbital period (T) of a satellite is related to its orbital radius (r) and the mass of the Earth (M) through the formula T = 2*pi*sqrt(r^3/G*M), where G is the gravitational constant. This formula is derived from Kepler's third law of planetary motion.",
+          "Step 2: Calculate the original orbital radius of the satellite. The orbital radius is the sum of the altitude of the satellite above Earth's surface and the radius of the Earth. Hence, r = h + R = 400 km + 6371 km = 6771 km.",
+          "Step 3: Understand that increasing the speed of the satellite by 20% means its new speed is 1.2 times its original speed. According to the vis-viva equation, v^2 = G*M*(2/r - 1/a), where v is the orbital speed, and a is the semi-major axis of the orbit, which equals the orbital radius r for a circular orbit.",
+          "Step 4: Recognize that for a circular orbit, the kinetic energy is proportional to the square of the orbital speed (v^2), and the gravitational potential energy is inversely proportional to the orbital radius (r). Thus, increasing the speed by 20% alters the satellite's energy balance and affects its orbit.",
+          "Step 5: Recall that the orbital period is inversely proportional to the 1.5 power of the average orbital speed. Hence, if the speed increases by 20%, the new period T_new is related to the original period T by the relation T_new = T / (1.2)^1.5.",
+          "Step 6: Calculate the new orbital period as a fraction of the original period using the formula from step 5."
+        ],
+        "final_answer": "{ \"new_period_fraction\": \"0.833\" }",
+        "confidence": 0.95,
+        "approach": "The solution was approached by applying Kepler's laws of planetary motion and the vis-viva equation to understand how a change in speed affects the orbital period of a satellite. The relationship between speed and period was used to calculate the new period as a fraction of the original."
+      }
+    },
+    "solver_3": {
+      "solver_id": "solver_3",
+      "model_name": "gpt-4",
+      "model_id": "solver_1",
+      "problem_text": "A satellite of mass m orbits Earth in a circular orbit at altitude h = 400 km. If the satellite's speed is increased by 20%, what is the new orbital period as a fraction of the original period? (Assume Earth's radius R = 6371 km and ignore atmospheric drag)",
+      "reasoning_steps": [
+        "Step 1: The problem involves a physics concept: Kepler's Third Law, which states that the square of the orbital period of a planet is directly proportional to the cube of the semi-major axis of its orbit. In the case of a circular orbit, the semi-major axis is the radius of the circle. This can be written as T^2 = k*r^3, where T is the orbital period, r is the radius of the orbit, and k is a constant of proportionality.",
+        "Step 2: The radius of the original orbit is the sum of the Earth's radius and the satellite's altitude, which is R + h = 6371 km + 400 km = 6771 km.",
+        "Step 3: The satellite's speed is increased by 20%, which means the new speed is 1.2 times the original speed. Since the speed of an orbiting object is inversely proportional to the square root of the radius of the orbit, the new radius will be (1/1.2)^2 = 0.69444 times the original radius.",
+        "Step 4: Thus, the new radius is 0.69444 * 6771 km = 4700 km.",
+        "Step 5: Substituting the new radius into Kepler's Third Law, we find that the new orbital period is the square root of the ratio of the cubes of the old and new radii, which is sqrt((6771/4700)^3) = 1.259 times the original period."
+      ],
+      "final_answer": "1.259",
+      "confidence": 1.0,
+      "approach": "The approach used involves applying Kepler's Third Law to find the new orbital period after the satellite's speed is increased. The radius of the new orbit is found by considering the inverse square root relationship between speed and radius, and the new orbital period is then calculated by substituting the new radius into Kepler's Third Law.",
+      "raw_response": {
+        "reasoning_steps": [
+          "Step 1: The problem involves a physics concept: Kepler's Third Law, which states that the square of the orbital period of a planet is directly proportional to the cube of the semi-major axis of its orbit. In the case of a circular orbit, the semi-major axis is the radius of the circle. This can be written as T^2 = k*r^3, where T is the orbital period, r is the radius of the orbit, and k is a constant of proportionality.",
+          "Step 2: The radius of the original orbit is the sum of the Earth's radius and the satellite's altitude, which is R + h = 6371 km + 400 km = 6771 km.",
+          "Step 3: The satellite's speed is increased by 20%, which means the new speed is 1.2 times the original speed. Since the speed of an orbiting object is inversely proportional to the square root of the radius of the orbit, the new radius will be (1/1.2)^2 = 0.69444 times the original radius.",
+          "Step 4: Thus, the new radius is 0.69444 * 6771 km = 4700 km.",
+          "Step 5: Substituting the new radius into Kepler's Third Law, we find that the new orbital period is the square root of the ratio of the cubes of the old and new radii, which is sqrt((6771/4700)^3) = 1.259 times the original period."
+        ],
+        "final_answer": "1.259",
+        "confidence": 1.0,
+        "approach": "The approach used involves applying Kepler's Third Law to find the new orbital period after the satellite's speed is increased. The radius of the new orbit is found by considering the inverse square root relationship between speed and radius, and the new orbital period is then calculated by substituting the new radius into Kepler's Third Law."
+      }
+    }
+  },
+  "timestamp": "2026-01-22 23:05:53"
+}

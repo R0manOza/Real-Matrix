@@ -1,0 +1,60 @@
+{
+  "problem_id": "physics_001",
+  "problem_text": "A satellite of mass m orbits Earth in a circular orbit at altitude h = 400 km. If the satellite's speed is increased by 20%, what is the new orbital period as a fraction of the original period? (Assume Earth's radius R = 6371 km and ignore atmospheric drag)",
+  "judgment": {
+    "judge_model": "gpt-4-turbo-preview",
+    "winner": "solver_2",
+    "winning_answer": "0.694",
+    "evaluation": {
+      "solver_1": {
+        "original_score": 0.4,
+        "refined_score": 0.5,
+        "reasoning_quality": "poor",
+        "likely_correct": false
+      },
+      "solver_2": {
+        "original_score": 0.8,
+        "refined_score": 0.95,
+        "reasoning_quality": "excellent",
+        "likely_correct": true
+      },
+      "solver_3": {
+        "original_score": 0.2,
+        "refined_score": 0.2,
+        "reasoning_quality": "poor",
+        "likely_correct": false
+      }
+    },
+    "selection_reasoning": "Solver_2's refined solution correctly applies the relationship between speed increase and orbital period change, using the correct formula that relates the new period to the original period through the factor of (1.2)^1.5. This approach is consistent with the principles of orbital mechanics and Kepler's laws. Solver_1's approach, both original and refined, misunderstands the direct application of velocity change to the period calculation without considering the necessary orbital mechanics principles. Solver_3's solutions incorrectly interpret the impact of speed increase on the orbital radius and period, leading to a fundamentally flawed conclusion. Solver_2's refined solution, therefore, stands out for its accuracy, clarity, and adherence to physical laws.",
+    "consensus_analysis": "There was a clear disagreement among the solvers regarding the correct approach to the problem. Solver_2's understanding and application of orbital mechanics principles were contested by others, but ultimately, Solver_2's methodology aligns best with established physics, indicating a lack of consensus but a correct approach by Solver_2.",
+    "confidence": 0.95,
+    "raw_response": {
+      "winner": "solver_2",
+      "winning_answer": "0.694",
+      "evaluation": {
+        "solver_1": {
+          "original_score": 0.4,
+          "refined_score": 0.5,
+          "reasoning_quality": "poor",
+          "likely_correct": false
+        },
+        "solver_2": {
+          "original_score": 0.8,
+          "refined_score": 0.95,
+          "reasoning_quality": "excellent",
+          "likely_correct": true
+        },
+        "solver_3": {
+          "original_score": 0.2,
+          "refined_score": 0.2,
+          "reasoning_quality": "poor",
+          "likely_correct": false
+        }
+      },
+      "selection_reasoning": "Solver_2's refined solution correctly applies the relationship between speed increase and orbital period change, using the correct formula that relates the new period to the original period through the factor of (1.2)^1.5. This approach is consistent with the principles of orbital mechanics and Kepler's laws. Solver_1's approach, both original and refined, misunderstands the direct application of velocity change to the period calculation without considering the necessary orbital mechanics principles. Solver_3's solutions incorrectly interpret the impact of speed increase on the orbital radius and period, leading to a fundamentally flawed conclusion. Solver_2's refined solution, therefore, stands out for its accuracy, clarity, and adherence to physical laws.",
+      "consensus_analysis": "There was a clear disagreement among the solvers regarding the correct approach to the problem. Solver_2's understanding and application of orbital mechanics principles were contested by others, but ultimately, Solver_2's methodology aligns best with established physics, indicating a lack of consensus but a correct approach by Solver_2.",
+      "confidence": 0.95
+    }
+  },
+  "timestamp": "2026-01-22 23:08:29"
+}

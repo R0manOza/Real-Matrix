@@ -1,0 +1,60 @@
+{
+  "problem_id": "physics_002",
+  "problem_text": "A block of mass 2 kg slides down a frictionless incline at 30° to the horizontal. At the bottom, it collides elastically with a stationary block of mass 4 kg on a horizontal surface. What is the final speed of the 2 kg block? (Assume g = 10 m/s² and the first block starts from rest at height 5 m)",
+  "judgment": {
+    "judge_model": "gpt-4-turbo-preview",
+    "winner": "solver_3",
+    "winning_answer": "10 m/s",
+    "evaluation": {
+      "solver_1": {
+        "original_score": 0.8,
+        "refined_score": 0.9,
+        "reasoning_quality": "good",
+        "likely_correct": true
+      },
+      "solver_2": {
+        "original_score": 0.8,
+        "refined_score": 0.6,
+        "reasoning_quality": "fair",
+        "likely_correct": false
+      },
+      "solver_3": {
+        "original_score": 0.9,
+        "refined_score": 0.95,
+        "reasoning_quality": "excellent",
+        "likely_correct": true
+      }
+    },
+    "selection_reasoning": "Solver_3's solution is selected as the winner due to its high-quality reasoning, correct application of physics principles, and clear explanation. The refined solution improves on clarity and accessibility, making it the most comprehensive and understandable solution. Solver_1 also provided a correct solution, but Solver_3's explanation, especially regarding the 1:2 mass ratio shortcut and the clarification on speed versus velocity, made their solution stand out. Solver_2's refined solution incorrectly calculated the final speed of the 2 kg block as 5 m/s, which is not supported by the conservation laws as applied in this scenario.",
+    "consensus_analysis": "There was general agreement among the solvers that the principles of conservation of energy and momentum are key to solving the problem. However, there was a discrepancy in Solver_2's interpretation in their refined solution, which led to a different and incorrect final answer. Solvers 1 and 3 agreed on the correct final speed of 10 m/s for the 2 kg block, demonstrating a consensus on the correct application of physics principles.",
+    "confidence": 0.95,
+    "raw_response": {
+      "winner": "solver_3",
+      "winning_answer": "10 m/s",
+      "evaluation": {
+        "solver_1": {
+          "original_score": 0.8,
+          "refined_score": 0.9,
+          "reasoning_quality": "good",
+          "likely_correct": true
+        },
+        "solver_2": {
+          "original_score": 0.8,
+          "refined_score": 0.6,
+          "reasoning_quality": "fair",
+          "likely_correct": false
+        },
+        "solver_3": {
+          "original_score": 0.9,
+          "refined_score": 0.95,
+          "reasoning_quality": "excellent",
+          "likely_correct": true
+        }
+      },
+      "selection_reasoning": "Solver_3's solution is selected as the winner due to its high-quality reasoning, correct application of physics principles, and clear explanation. The refined solution improves on clarity and accessibility, making it the most comprehensive and understandable solution. Solver_1 also provided a correct solution, but Solver_3's explanation, especially regarding the 1:2 mass ratio shortcut and the clarification on speed versus velocity, made their solution stand out. Solver_2's refined solution incorrectly calculated the final speed of the 2 kg block as 5 m/s, which is not supported by the conservation laws as applied in this scenario.",
+      "consensus_analysis": "There was general agreement among the solvers that the principles of conservation of energy and momentum are key to solving the problem. However, there was a discrepancy in Solver_2's interpretation in their refined solution, which led to a different and incorrect final answer. Solvers 1 and 3 agreed on the correct final speed of 10 m/s for the 2 kg block, demonstrating a consensus on the correct application of physics principles.",
+      "confidence": 0.95
+    }
+  },
+  "timestamp": "2026-01-22 23:17:27"
+}
